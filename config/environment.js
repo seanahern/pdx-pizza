@@ -16,7 +16,17 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
-    }
+    },
+    contentSecurityPolicy: {
+      'default-src': "'none'",
+      'script-src': "'self' 'unsafe-inline' 'unsafe-eval' use.typekit.net connect.facebook.net maps.googleapis.com maps.gstatic.com cdn.leafletjs.com",
+      'font-src': "'self' data: use.typekit.net",
+      'connect-src': "'self'",
+      'img-src': "'self' www.facebook.com p.typekit.net a.tiles.mapbox.com b.tiles.mapbox.com c.tiles.mapbox.com a.tile.osm.org b.tile.osm.org c.tile.osm.org",
+      'style-src': "'self' 'unsafe-inline' use.typekit.net cdn.leafletjs.com",
+      'frame-src': "s-static.ak.facebook.com static.ak.facebook.com www.facebook.com"
+    },
+    typekitID: 'xiu6lva'
   };
 
   if (environment === 'development') {

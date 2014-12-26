@@ -1,4 +1,6 @@
-# Pdx-pizza
+# PDX Pizza
+
+http://pdx.pizza
 
 This README outlines the details of collaborating on this Ember application.
 
