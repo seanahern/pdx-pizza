@@ -12,7 +12,13 @@ export default Ember.Component.extend({
 
         $("#map").css("height",$(window).outerHeight() - $(".header").outerHeight());
 
-        var newIcon = L.divIcon({ className: 'my-div-icon' });
+        var newIcon = L.icon({
+            iconUrl: 'images/pizza-icon.png',
+
+            iconSize:     [28, 40], // size of the icon
+            iconAnchor:   [14, 40], // point of the icon which will correspond to marker's location
+            popupAnchor:  [0, -40] // point from which the popup should open relative to the iconAnchor
+        });
         var places = this.get('places');
 
         places.forEach(function(item, index) {
