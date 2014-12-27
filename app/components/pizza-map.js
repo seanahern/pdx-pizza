@@ -1,5 +1,7 @@
 import Ember from 'ember';
 
+/* globals $, L */
+
 export default Ember.Component.extend({
     didInsertElement: function () {
         var mapboxTiles = L.tileLayer('https://{s}.tiles.mapbox.com/v3/examples.map-i87786ca/{z}/{x}/{y}.png', {
@@ -21,7 +23,7 @@ export default Ember.Component.extend({
         });
         var places = this.get('places');
 
-        places.forEach(function(item, index) {
+        places.forEach(function(item) {
             L.marker([item._data.longitude, item._data.latitude], {icon: newIcon}).bindPopup(item._data.name).addTo(map);
         });
       }
