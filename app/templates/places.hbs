@@ -1,0 +1,17 @@
+<div class="places container">
+
+{{#each}}
+    <div class="place">
+        <h4>{{name}}</h4>
+        <div class="website"><a target="_" {{bind-attr href='website'}}>{{website}}</a></div>
+    </div>
+{{/each}}
+
+</ul>
+<div id="map" style="display: none;">
+
+</div>
+
+</div>
+
+{{outlet}}
