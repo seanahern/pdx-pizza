@@ -1,9 +1,11 @@
-<div class="places container">
+<div class="places grid container">
 
 {{#each}}
     <div class="place">
         <h4>{{name}}</h4>
         <div class="website"><a target="_" {{bind-attr href='website'}}>{{website}}</a></div>
+        <div class="rating">{{rating}}</div>
+        <div class="address">{{address.street}}</div>
     </div>
 {{/each}}
 

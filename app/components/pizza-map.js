@@ -24,7 +24,7 @@ export default Ember.Component.extend({
         var places = this.get('places');
 
         places.forEach(function(item) {
-            L.marker([item._data.longitude, item._data.latitude], {icon: newIcon}).bindPopup(item._data.name).addTo(map);
+            L.marker([item._data.latitude,item._data.longitude], {icon: newIcon}).bindPopup(item._data.name).addTo(map);
         });
       }
 });
