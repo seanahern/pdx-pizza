@@ -9,6 +9,7 @@ Router.map(function() {
   this.resource('places', function() { });
   this.resource('about', function() { });
   this.resource('submit', function() { });
+  this.resource('p', { path: 'p/:p_id' }, function() { });
 });
 
 export default Router;
