@@ -73,7 +73,7 @@ body {
 
 .nav {
     float: right;
-    margin-top: 3px;
+    margin-top: 6px;
 }
 
 .nav li {
@@ -85,14 +85,13 @@ body {
     display: block;
     padding: 8px 10px;
     border: 2px solid transparent;
-    color: #E74C4C;
+    color: #FFFFFF;
 }
 
 .header {
     padding: 17px 0px;
-    /* background-color: #E74C4C;
-    color: #fff; */
-    color: #E74C4C;
+    background-color: #E74C4C;
+    color: #fff;
 }
 .header a {
     color: #fff;
@@ -106,16 +105,17 @@ body {
 
 .button {
     display: inline-block;
-    padding: 8px 10px 7px;
+    padding: 8px 10px 8px;
     border-radius: 3px;
-    color: #E74C4C;
+    color: #FFF;
 }
 
 .button.nav {
-    border: 2px solid #E74C4C;
+    border: 2px solid #FFFFFF;
     background-color: transparent;
     margin-left: 10px;
     margin-top: 0px;
+    padding: 8px 10px 7px;
 }
 
 #title {
@@ -124,6 +124,7 @@ body {
     margin-right: 20px;
     padding: 8px 0px;
     border: 2px solid transparent;
+    font-size: 1.8em;
 }
 
 .my-div-icon {
@@ -159,7 +160,7 @@ p {
 }
 
 .places.grid .place {
-display: block;
-width: 33%;
-float: left;
+    display: block;
+    width: 33%;
+    float: left;
 }
