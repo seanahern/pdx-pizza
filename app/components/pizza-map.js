@@ -12,7 +12,7 @@ export default Ember.Component.extend({
         .addLayer(mapboxTiles)
         .setView([45.5200, -122.65], 13);
 
-        $("#map").css("height",$(window).outerHeight() - $(".header").outerHeight());
+        $("#map").css("height",$(window).outerHeight());
 
         var newIcon = L.icon({
             iconUrl: 'images/pizza-icon.png',

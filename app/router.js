@@ -6,4 +6,7 @@ var Router = Ember.Router.extend({
 });
 
 export default Router.map(function() {
+    this.route('places', function() { });
+    this.route('about', function() { });
+    this.route('submit', function() { });
 });
